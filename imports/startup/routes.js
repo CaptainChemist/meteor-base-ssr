@@ -21,7 +21,6 @@ const requireAuth = (nextState, replace) => {
 };
 
   export const Routes = (
-    <Router history={ browserHistory }>
       <Route path="/" component={ App }>
         <IndexRoute name="index"
                     displayTitle="BC Real Estate Math Online Course"
@@ -38,6 +37,4 @@ const requireAuth = (nextState, replace) => {
         <Route name="signup" path="/signup" component={ Signup } />
         <Route path="*" component={ NotFound } />
       </Route>
-    </Router>,
-    document.getElementById('react-root')
   );
